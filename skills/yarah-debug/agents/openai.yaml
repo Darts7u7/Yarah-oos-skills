@@ -1,0 +1,5 @@
+interface:
+  display_name: "Yarah Debug"
+  short_description: "Diagnose Yarah backend errors and run health audits."
+  brand_color: "#17B26A"
+  default_prompt: "Use $yarah-debug to diagnose this backend error."

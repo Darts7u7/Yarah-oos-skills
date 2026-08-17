@@ -1,11 +1,11 @@
 {
-  "name": "insforge",
+  "name": "yarah",
   "interface": {
-    "displayName": "InsForge"
+    "displayName": "Yarah"
   },
   "plugins": [
     {
-      "name": "insforge",
+      "name": "yarah",
       "source": {
         "source": "local",
         "path": "./"

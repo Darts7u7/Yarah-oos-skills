@@ -1,0 +1,5 @@
+interface:
+  display_name: "Yarah Integrations"
+  short_description: "Wire external auth or x402 payments into Yarah."
+  brand_color: "#17B26A"
+  default_prompt: "Use $yarah-integrations to wire Clerk auth into Yarah RLS."

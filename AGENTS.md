@@ -1,13 +1,13 @@
 # AI Agent Guidance
 
-This document helps AI coding agents work effectively with the InsForge Agent Skills repository.
+This document helps AI coding agents work effectively with the Yarah Agent Skills repository.
 
 ## Repository Structure
 
 ```
 agent-skills/
 ├── skills/
-│   └── insforge/           # InsForge BaaS development skill
+│   └── yarah/           # Yarah BaaS development skill
 │       ├── SKILL.md        # Skill manifest and overview
 │       ├── database/       # Database operations
 │       ├── auth/           # Authentication flows
@@ -17,7 +17,7 @@ agent-skills/
 │       ├── realtime/       # Real-time messaging
 │       ├── payments/       # Stripe and Razorpay app payment flows
 │       └── email/          # Transactional email
-│   └── insforge-cli/       # InsForge CLI project management
+│   └── yarah-cli/       # Yarah CLI project management
 │       ├── SKILL.md        # Skill manifest and command reference
 │       └── references/     # CLI command reference
 │           ├── database/   # Database migrations, query, RLS, vector, import/export
@@ -52,14 +52,14 @@ Each skill contains a `SKILL.md` with:
 
 ### Documentation Pattern
 
-Most InsForge skill modules use focused app-facing guides:
+Most Yarah skill modules use focused app-facing guides:
 
 | File | Purpose | When to Use |
 |------|---------|-------------|
-| `sdk-integration.md` | App-facing SDK/API usage, usually through `@insforge/sdk` | Implementing features in user's app code |
+| `sdk-integration.md` | App-facing SDK/API usage, usually through `@yarahdev/sdk` | Implementing features in user's app code |
 | Specialized guides such as `storage/postgres-rls.md`, `s3-gateway.md`, CLI references like `references/database/access-control.md`, `references/database/integrity.md`, `references/database/vector.md`, or payment provider files | Backend, security, payment-provider, protocol, or infrastructure-specific patterns | When the task needs that capability |
 
-The AI module is capability-based instead: start at `skills/insforge/ai/overview.md`,
+The AI module is capability-based instead: start at `skills/yarah/ai/overview.md`,
 then load only the needed OpenRouter guide (`chat-completions.md`,
 `image-generation.md`, `video-generation.md`, `audio.md`,
 `embeddings-and-rag.md`, or `models-list.md`).
@@ -68,14 +68,14 @@ then load only the needed OpenRouter guide (`chat-completions.md`,
 
 ### Adding a New Module
 
-1. Create a directory under `skills/insforge/` with the module name
+1. Create a directory under `skills/yarah/` with the module name
 2. Add `sdk-integration.md` for client-side SDK usage, or use a focused
    capability guide when the module spans multiple APIs
 3. Add specialized guides only when a capability needs separate backend,
    security, protocol, or workflow documentation
-4. Update the module reference table in `skills/insforge/SKILL.md`
+4. Update the module reference table in `skills/yarah/SKILL.md`
 
-For payments, keep app guides provider-specific (`payments/stripe.md`, `payments/razorpay.md`) and keep CLI routing/provider docs in `skills/insforge-cli/references/payments/`.
+For payments, keep app guides provider-specific (`payments/stripe.md`, `payments/razorpay.md`) and keep CLI routing/provider docs in `skills/yarah-cli/references/payments/`.
 
 ### Updating Existing Documentation
 
@@ -94,9 +94,9 @@ Before committing changes:
 - [ ] Code examples are syntactically correct
 - [ ] All internal links are valid relative paths
 
-## Key InsForge Patterns
+## Key Yarah Patterns
 
-When working with InsForge skills, remember:
+When working with Yarah skills, remember:
 
 1. **Backend First**: Most features require backend configuration before SDK integration
 2. **Metadata Endpoint**: Always fetch `/api/metadata` before making changes

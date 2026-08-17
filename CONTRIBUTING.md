@@ -1,6 +1,6 @@
-# Contributing to InsForge Agent Skills
+# Contributing to Yarah Agent Skills
 
-Thank you for your interest in contributing to InsForge Agent Skills! This document provides guidelines for contributing to this repository.
+Thank you for your interest in contributing to Yarah Agent Skills! This document provides guidelines for contributing to this repository.
 
 ## Getting Started
 
@@ -36,10 +36,10 @@ Keep `short_description` between 25 and 64 characters, and have
 
 ### Documentation Files
 
-For InsForge modules, keep documentation focused on the app or platform surface
+For Yarah modules, keep documentation focused on the app or platform surface
 being used:
 
-- **`sdk-integration.md`**: Client-side SDK usage with `@insforge/sdk`
+- **`sdk-integration.md`**: Client-side SDK usage with `@yarahdev/sdk`
 - **Specialized guides**: Backend, security, protocol, or workflow-specific
   references such as RLS, pgvector, S3-compatible storage, or capability guides
 
@@ -64,7 +64,7 @@ Each documentation file should include:
 
 ```javascript
 // Good: Shows complete pattern
-const { data, error } = await insforge.database.from('posts').select()
+const { data, error } = await yarah.database.from('posts').select()
 if (error) {
   console.error(error)
   return
@@ -81,9 +81,9 @@ console.log(data)
 
 ## Adding a New Module
 
-1. Create a directory under `skills/insforge/`
+1. Create a directory under `skills/yarah/`
 2. Add the required documentation files
-3. Update the module reference table in `skills/insforge/SKILL.md`
+3. Update the module reference table in `skills/yarah/SKILL.md`
 4. Test that all links work correctly
 
 ## Pull Request Process

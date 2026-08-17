@@ -1,0 +1,5 @@
+interface:
+  display_name: "Yarah"
+  short_description: "Build app features on Yarah: data, auth, storage, AI."
+  brand_color: "#17B26A"
+  default_prompt: "Use $yarah to add authentication and database CRUD to this app."

@@ -1,16 +1,16 @@
 {
-  "name": "insforge",
-  "description": "The backend platform for AI-native developers. A Postgres-based backend with auth, storage, compute, hosting, and AI gateway — built for coding agents. This plugin gives agents the full InsForge surface: database CRUD with RLS, authentication, storage, edge functions, AI, realtime, Stripe payments, and deployments. Includes CLI infrastructure management, debugging diagnostics, and integration guides for third-party auth providers (Auth0, Clerk, Kinde, Stytch, WorkOS).",
+  "name": "yarah",
+  "description": "The backend platform for AI-native developers. A Postgres-based backend with auth, storage, compute, hosting, and AI gateway — built for coding agents. This plugin gives agents the full Yarah surface: database CRUD with RLS, authentication, storage, edge functions, AI, realtime, Stripe payments, and deployments. Includes CLI infrastructure management, debugging diagnostics, and integration guides for third-party auth providers (Auth0, Clerk, Kinde, Stytch, WorkOS).",
   "version": "1.2.0",
   "author": {
-    "name": "InsForge",
-    "url": "https://insforge.dev"
+    "name": "Yarah",
+    "url": "https://yarah.dev"
   },
-  "homepage": "https://docs.insforge.dev",
-  "repository": "https://github.com/InsForge/insforge-skills",
+  "homepage": "https://docs.yarah.dev",
+  "repository": "https://github.com/Darts7u7/Yarah-oos-skills",
   "license": "Apache-2.0",
   "keywords": [
-    "insforge",
+    "yarah",
     "ai-native",
     "coding-agents",
     "ai-agents",

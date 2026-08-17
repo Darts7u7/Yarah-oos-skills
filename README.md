@@ -1,38 +1,38 @@
-# InsForge Agent Skills
+# Yarah Agent Skills
 
-Agent Skills to help developers using AI agents build applications with [InsForge](https://insforge.dev) Backend-as-a-Service.
+Agent Skills to help developers using AI agents build applications with [Yarah](https://yarah.dev) Backend-as-a-Service.
 
 ## Installation
 
 ### Codex plugin marketplace
 
-Add this repository as a Codex plugin marketplace, then install the InsForge plugin:
+Add this repository as a Codex plugin marketplace, then install the Yarah plugin:
 
 ```bash
-codex plugin marketplace add InsForge/insforge-skills
-codex plugin add insforge@insforge
+codex plugin marketplace add Darts7u7/Yarah-oos-skills
+codex plugin add yarah@yarah
 ```
 
-After installing, start a new Codex thread and ask Codex to use InsForge or one of the bundled skills.
+After installing, start a new Codex thread and ask Codex to use Yarah or one of the bundled skills.
 
 ### Using the skills registry
 
 ```bash
-npx -y skills add insforge/insforge-skills
+npx -y skills add yarah/yarah-skills
 ```
 
 ### Claude Code
 
 ```bash
-/install-skills insforge/insforge-skills
+/install-skills yarah/yarah-skills
 ```
 
 ## Available Skills
 
 <details>
-<summary><strong>insforge</strong> - InsForge Backend-as-a-Service Development</summary>
+<summary><strong>yarah</strong> - Yarah Backend-as-a-Service Development</summary>
 
-Build full-stack applications with InsForge. This skill provides comprehensive guidance for:
+Build full-stack applications with Yarah. This skill provides comprehensive guidance for:
 
 - **Database**: CRUD operations, schema design, RLS policies, triggers
 - **Authentication**: Sign up/in flows, OAuth, sessions, email verification
@@ -41,16 +41,16 @@ Build full-stack applications with InsForge. This skill provides comprehensive g
 - **AI**: OpenRouter via project Model Gateway key setup, chat completions, image/video/audio generation, embeddings, and model discovery
 - **Real-time**: WebSocket connections, subscriptions, event publishing
 - **Payments**: Stripe Checkout/Billing Portal and Razorpay Orders/Subscriptions
-- **Deployments**: Frontend app deployment to InsForge hosting
+- **Deployments**: Frontend app deployment to Yarah hosting
 
-**Key distinction**: Backend infrastructure uses the CLI skill. Most client integration uses `@insforge/sdk`; new AI features use OpenRouter APIs with an API key set up by `npx -y @insforge/cli ai setup`.
+**Key distinction**: Backend infrastructure uses the CLI skill. Most client integration uses `@yarahdev/sdk`; new AI features use OpenRouter APIs with an API key set up by `npx -y @yarahdev/cli ai setup`.
 
 </details>
 
 <details>
-<summary><strong>insforge-cli</strong> - InsForge CLI Project Management</summary>
+<summary><strong>yarah-cli</strong> - Yarah CLI Project Management</summary>
 
-Create and manage InsForge projects from the command line. This skill provides comprehensive guidance for:
+Create and manage Yarah projects from the command line. This skill provides comprehensive guidance for:
 
 - **Authentication**: Login (OAuth/password), logout, session verification
 - **Project Management**: Create, link, and inspect projects
@@ -58,22 +58,22 @@ Create and manage InsForge projects from the command line. This skill provides c
 - **Edge Functions**: Deploy, invoke, and view function source
 - **Storage**: Bucket and object management (upload, download, list)
 - **Deployments**: Frontend app deployment and status tracking
-- **AI**: OpenRouter key setup with `npx -y @insforge/cli ai setup`
+- **AI**: OpenRouter key setup with `npx -y @yarahdev/cli ai setup`
 - **Payments**: Stripe/Razorpay key setup, catalog sync, provider webhooks
 - **Secrets**: Create, update, and manage project secrets
 - **CI/CD**: Non-interactive workflows using environment variables
 
-**Key distinction**: Use this skill for infrastructure management via `@insforge/cli`. For writing application code with the InsForge SDK, use the **insforge** skill instead.
+**Key distinction**: Use this skill for infrastructure management via `@yarahdev/cli`. For writing application code with the Yarah SDK, use the **yarah** skill instead.
 
 </details>
 
 <details>
-<summary><strong>insforge-debug</strong> - InsForge Debugging & Diagnostics</summary>
+<summary><strong>yarah-debug</strong> - Yarah Debugging & Diagnostics</summary>
 
-Diagnose errors, bugs, and performance issues in InsForge projects. This skill guides diagnostic command execution for:
+Diagnose errors, bugs, and performance issues in Yarah projects. This skill guides diagnostic command execution for:
 
 - **SDK Errors**: Frontend SDK error objects and unexpected behavior
-- **HTTP Errors**: 4xx/5xx responses from InsForge backend
+- **HTTP Errors**: 4xx/5xx responses from Yarah backend
 - **Edge Functions**: Failures, timeouts, and deploy errors
 - **Database**: Slow queries and performance degradation
 - **Auth**: Authentication and authorization failures
@@ -85,9 +85,9 @@ Diagnose errors, bugs, and performance issues in InsForge projects. This skill g
 </details>
 
 <details>
-<summary><strong>insforge-integrations</strong> - Third-Party Auth Provider Integrations</summary>
+<summary><strong>yarah-integrations</strong> - Third-Party Auth Provider Integrations</summary>
 
-Connect external providers to InsForge. The auth-provider guides cover JWT configuration, token signing, and InsForge client setup for Row Level Security (RLS); the OKX x402 guide is a separate onchain payment-facilitator flow:
+Connect external providers to Yarah. The auth-provider guides cover JWT configuration, token signing, and Yarah client setup for Row Level Security (RLS); the OKX x402 guide is a separate onchain payment-facilitator flow:
 
 - **Auth0**: Post Login Action, Auth0 v4 SDK, custom claim embedding
 - **Clerk**: JWT Template config, client-side `getToken()` flow
@@ -97,16 +97,16 @@ Connect external providers to InsForge. The auth-provider guides cover JWT confi
 - **Better Auth**: Framework-agnostic auth/bridge primitives, RLS policies, client hook
 - **OKX x402**: Onchain pay-per-use billing via the x402 payment facilitator (not an auth provider)
 
-**Key distinction**: Use these guides when connecting an external auth provider (or the x402 payment facilitator) to InsForge. For InsForge's built-in authentication, use the **insforge** skill instead.
+**Key distinction**: Use these guides when connecting an external auth provider (or the x402 payment facilitator) to Yarah. For Yarah's built-in authentication, use the **yarah** skill instead.
 
 </details>
 
 ## Usage
 
-Once installed, AI agents can access InsForge-specific guidance when:
+Once installed, AI agents can access Yarah-specific guidance when:
 
 - Setting up backend infrastructure (tables, buckets, functions, auth, AI)
-- Integrating `@insforge/sdk` into frontend applications
+- Integrating `@yarahdev/sdk` into frontend applications
 - Implementing database CRUD operations with proper RLS
 - Building authentication flows with OAuth and email verification
 - Adding Stripe or Razorpay payment flows
@@ -118,7 +118,7 @@ Each skill follows the [Agent Skills Open Standard](https://agentskills.io/):
 
 ```
 skills/
-├── insforge/
+├── yarah/
 │   ├── SKILL.md              # Main skill manifest and overview
 │   ├── database/
 │   │   └── sdk-integration.md
@@ -146,7 +146,7 @@ skills/
 │   │   └── razorpay.md
 │   └── email/
 │       └── sdk-integration.md
-├── insforge-cli/
+├── yarah-cli/
 │   ├── SKILL.md              # CLI skill manifest and command reference
 │   └── references/
 │       ├── auth.md
@@ -178,7 +178,7 @@ skills/
 │       └── deployments/
 │           ├── deploy.md
 │           └── domains.md
-├── insforge-debug/
+├── yarah-debug/
 │   ├── SKILL.md              # Debug & diagnostics skill manifest
 │   └── references/
 │       ├── error-objects.md
@@ -190,7 +190,7 @@ skills/
 │       ├── metadata.md
 │       ├── deploy-state.md
 │       └── ai-assisted.md
-└── insforge-integrations/
+└── yarah-integrations/
     ├── SKILL.md              # Integrations skill manifest
     └── references/
         ├── auth0.md          # Auth0 integration guide

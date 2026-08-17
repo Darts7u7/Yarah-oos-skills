@@ -1,0 +1,5 @@
+interface:
+  display_name: "Yarah CLI"
+  short_description: "Manage Yarah backend infrastructure from the CLI."
+  brand_color: "#17B26A"
+  default_prompt: "Use $yarah-cli to create tables, RLS policies, and deploy functions."
