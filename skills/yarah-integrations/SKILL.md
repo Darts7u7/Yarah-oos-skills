@@ -40,7 +40,7 @@ This skill covers integrating **third-party providers** with Yarah. Currently tw
 1. **Server returns `402 Payment Required`** with a JSON challenge base64-encoded in `PAYMENT-REQUIRED` header
 2. **Client signs an EIP-3009 authorization** using the stablecoin's EIP-712 domain
 3. **Server forwards the signed payload** to the facilitator's `/verify` + `/settle` endpoints
-4. **Server records the settled payment** in an Yarah table with a realtime trigger for live dashboards
+4. **Server records the settled payment** in a Yarah table with a realtime trigger for live dashboards
 
 ## Choosing a Provider
 

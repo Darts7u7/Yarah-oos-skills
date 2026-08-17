@@ -795,7 +795,7 @@ export function usePayments() {
 }
 ```
 
-**UI composition** (framework-agnostic outline — see [demo source](https://github.com/Yarah/yarah-integration/tree/main/payment/okx-x402/src/components) for complete Tailwind components):
+**UI composition** (framework-agnostic outline — see [demo source](https://github.com/Darts7u7/Yarah-oos-templates/tree/main/payment/okx-x402/src/components) for complete Tailwind components):
 
 ```tsx
 <Dashboard>

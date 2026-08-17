@@ -17,8 +17,8 @@ Official OpenRouter references:
 1. Start the OpenRouter video job from server-side code only.
 2. Store a `video_jobs` row in Yarah with the requesting user, prompt, model,
    OpenRouter job ID, polling URL, status, retry metadata, and storage fields.
-3. Poll OpenRouter from server-side infrastructure, such as an Yarah Edge
-   Function triggered by an Yarah Schedule.
+3. Poll OpenRouter from server-side infrastructure, such as a Yarah Edge
+   Function triggered by a Yarah Schedule.
 4. Keep each scheduled invocation bounded. Control how many jobs it polls and
    how many completed videos it downloads/uploads in one run.
 5. When a job completes, download the video server-side with
@@ -56,7 +56,7 @@ whole file inside Deno.
 |---------|-----|
 | Treating video generation as synchronous | Store a job row and poll from a scheduled server-side function |
 | Letting one cron invocation drain the whole queue | Bound each poller run with explicit limits and backoff |
-| Polling OpenRouter from the browser | Poll from an Yarah Edge Function or server worker |
+| Polling OpenRouter from the browser | Poll from a Yarah Edge Function or server worker |
 | Saving only the OpenRouter content URL | Download server-side, upload to Storage, save `url` and `key` |
 | Assuming `unsigned_urls[0]` is a public app URL | Treat it as a server-side download URL and send Authorization |
 | Buffering large videos in Deno Edge Functions | Use short clips or move large outputs to Compute/streaming upload |

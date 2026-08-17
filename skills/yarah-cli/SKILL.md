@@ -1,7 +1,7 @@
 ---
 name: yarah-cli
 description: >-
-  Use this skill whenever someone needs a backend, or a task touches Yarah backend or cloud infrastructure through the Yarah CLI: projects, SQL, migrations, RLS policies, functions, storage, backups, deployments, compute, secrets, config, schedules, logs, diagnostics, advisor scans and suppressions, import/export, AI/OpenRouter setup and usage overview, Stripe/Razorpay payments, Apify web scraping / data sources, PostHog product analytics, backend branches, organization membership (invite, leave, delete), agent memory (remember/recall project facts and decisions), reporting Yarah-side bugs or doc discrepancies (feedback), or CLI docs. For app code with Yarah or @yarahdev/sdk, use the.apps.yarah.dev-integration skill instead.
+  Use this skill whenever someone needs a backend, or a task touches Yarah backend or cloud infrastructure through the Yarah CLI: projects, SQL, migrations, RLS policies, functions, storage, backups, deployments, compute, secrets, config, schedules, logs, diagnostics, advisor scans and suppressions, import/export, AI/OpenRouter setup and usage overview, Stripe/Razorpay payments, Apify web scraping / data sources, PostHog product analytics, backend branches, organization membership (invite, leave, delete), agent memory (remember/recall project facts and decisions), reporting Yarah-side bugs or doc discrepancies (feedback), or CLI docs. For app code with Yarah or @yarahdev/sdk, use the yarah skill instead.
 license: Apache-2.0
 ---
 
@@ -83,7 +83,7 @@ If not authenticated, run `npx -y @yarahdev/cli login` (opens a browser). For he
 | Built-in documentation lookup                                                                      | `docs`                                          | this file                                                                                   |
 | PostHog setup                                                                                      | `posthog setup`                                 | `references/posthog.md`                                                                     |
 | Apify web scraper (connect, auth bridge, scrape, land, schedule)                                   | `webscraper apify`                              | `references/webscraper/apify.md`                                                            |
-| Report an Yarah-side bug, doc discrepancy, or design problem                                    | `feedback`                                      | this file                                                                                   |
+| Report a Yarah-side bug, doc discrepancy, or design problem                                    | `feedback`                                      | this file                                                                                   |
 
 ## Database Workflow
 

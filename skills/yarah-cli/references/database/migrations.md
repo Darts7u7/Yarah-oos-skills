@@ -1,6 +1,6 @@
 # npx -y @yarahdev/cli db migrations
 
-Manage developer database migration files for an Yarah project.
+Manage developer database migration files for a Yarah project.
 
 ## Commands
 

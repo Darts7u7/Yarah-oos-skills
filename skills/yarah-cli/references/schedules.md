@@ -108,4 +108,4 @@ Secrets are resolved at schedule creation/update time. If a referenced secret do
 | Referencing a non-existent secret                       | Create the secret first with `npx -y @yarahdev/cli secrets add`.                                         |
 | Targeting a non-existent function                       | Verify the function exists and is active before scheduling.                                           |
 | Assuming a schedule is running after create/update only | Check `isActive`, next run, and execution logs with `schedules get` and `schedules logs`.             |
-| Embedding raw secret values in schedule headers         | Store the value as an Yarah secret and use `${{secrets.KEY_NAME}}` in the schedule header JSON.    |
+| Embedding raw secret values in schedule headers         | Store the value as a Yarah secret and use `${{secrets.KEY_NAME}}` in the schedule header JSON.    |

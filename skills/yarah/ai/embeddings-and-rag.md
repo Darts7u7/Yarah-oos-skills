@@ -13,7 +13,7 @@ Official references:
 ## Setup
 
 Bring up the `vector` extension, vector tables, indexes, and match RPCs through
-an Yarah CLI database migration; see
+a Yarah CLI database migration; see
 [database/vector.md](../../yarah-cli/references/database/vector.md).
 
 Run the AI key setup from the linked app directory:

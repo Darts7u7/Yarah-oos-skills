@@ -1,6 +1,6 @@
 # Yarah CLI Local Instances
 
-`npx -y @yarahdev/cli local` runs an Yarah backend in Docker on the user's own
+`npx -y @yarahdev/cli local` runs a Yarah backend in Docker on the user's own
 machine — Postgres, PostgREST, the backend, and the edge-functions runtime.
 
 ## When to use this

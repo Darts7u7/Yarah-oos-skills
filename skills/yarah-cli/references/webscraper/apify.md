@@ -33,7 +33,7 @@ Choose the landing strategy by result size. The target is whatever satisfies the
 | Size / shape | Strategy |
 |---|---|
 | Small / one-shot | Keep the data in context and satisfy the use case directly (answer inline, return CSV, etc.). No persistence needed. |
-| Persist short/medium | Write an Yarah edge function that fetches the Apify dataset and upserts rows into a table. Deploy with `npx -y @yarahdev/cli functions deploy`. |
+| Persist short/medium | Write a Yarah edge function that fetches the Apify dataset and upserts rows into a table. Deploy with `npx -y @yarahdev/cli functions deploy`. |
 | Long-running or large dataset | Use Yarah Fly compute (`npx -y @yarahdev/cli compute deploy`). Paginate the dataset and upsert in batches to stay within memory limits. |
 
 **Getting the Apify token inside the handler.** The handler fetches a fresh Apify token at runtime:
@@ -53,8 +53,8 @@ Use that `accessToken` for Apify API calls. The token is short-lived, so **do no
 
 ## 5. Recurring runs (optional)
 
-**Heavy / long actor run:** schedule the run in Apify. When it finishes, Apify fires a webhook to an Yarah edge function that fetches the completed dataset and lands it. No polling needed.
+**Heavy / long actor run:** schedule the run in Apify. When it finishes, Apify fires a webhook to a Yarah edge function that fetches the completed dataset and lands it. No polling needed.
 
-**Short / fast actor run:** an Yarah schedule triggers an edge function that calls Apify `run-sync-get-dataset-items`, gets the result in one HTTP call, and lands it immediately. No webhook.
+**Short / fast actor run:** a Yarah schedule triggers an edge function that calls Apify `run-sync-get-dataset-items`, gets the result in one HTTP call, and lands it immediately. No webhook.
 
 Set up schedules with `npx -y @yarahdev/cli schedules create`. See `references/schedules.md` for cron format and secret header references.

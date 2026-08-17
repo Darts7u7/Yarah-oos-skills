@@ -109,7 +109,7 @@ For each table, list:
 | `UPDATE` | Which rows may be edited, and which fields must remain immutable? |
 | `DELETE` | Is deletion allowed, or should lifecycle state/soft delete be modeled? |
 
-If an operation or field is narrower than Yarah's broad public-table runtime
+If an operation or field is narrower tha Yarah's broad public-table runtime
 privileges, revoke the broad privilege first, then grant back the exact surface.
 
 ### Guard Protected Fields Outside RLS Predicates

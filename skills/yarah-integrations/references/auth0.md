@@ -1,7 +1,7 @@
 
 # Yarah + Auth0 Integration Guide
 
-Auth0 signs an Yarah-compatible JWT inside a **Post Login Action**, embeds it as a custom claim on the ID token, and the Next.js app extracts it to pass to the Yarah client as `accessToken` (deprecated alias: `edgeFunctionToken`). Yarah validates the token and uses the `sub` claim for Row Level Security.
+Auth0 signs a Yarah-compatible JWT inside a **Post Login Action**, embeds it as a custom claim on the ID token, and the Next.js app extracts it to pass to the Yarah client as `accessToken` (deprecated alias: `edgeFunctionToken`). Yarah validates the token and uses the `sub` claim for Row Level Security.
 
 ## Key packages
 

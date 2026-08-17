@@ -1,7 +1,7 @@
 {
   "name": "yarah",
   "description": "The backend platform for AI-native developers. A Postgres-based backend with auth, storage, compute, hosting, and AI gateway — built for coding agents. This plugin gives agents the full Yarah surface: database CRUD with RLS, authentication, storage, edge functions, AI, realtime, Stripe payments, and deployments. Includes CLI infrastructure management, debugging diagnostics, and integration guides for third-party auth providers (Auth0, Clerk, Kinde, Stytch, WorkOS).",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": {
     "name": "Yarah",
     "url": "https://yarah.dev"

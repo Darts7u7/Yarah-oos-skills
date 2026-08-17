@@ -1,7 +1,7 @@
 ---
 name: yarah-debug
 description: >-
-  Use when diagnosing problems in an Yarah project — reactive failures (SDK
+  Use when diagnosing problems in a Yarah project — reactive failures (SDK
   error object, HTTP 4xx/5xx, gateway timeout 502/503/504, edge function failure
   or timeout, login/OAuth/auth errors, RLS denial, realtime channel issues,
   slow query on one endpoint, edge function or Vercel deploy failure), proactive
@@ -192,7 +192,7 @@ retry loop:
 
 ## When the Root Cause Is Yarah Itself
 
-Some diagnoses end at an Yarah-side defect, not a project misconfiguration: a platform bug or regression, an SDK call that misbehaves, docs or a skill that contradict observed behavior, or a missing capability. A debug session is exactly where these get confirmed — report them while the evidence is in hand:
+Some diagnoses end at a Yarah-side defect, not a project misconfiguration: a platform bug or regression, an SDK call that misbehaves, docs or a skill that contradict observed behavior, or a missing capability. A debug session is exactly where these get confirmed — report them while the evidence is in hand:
 
 ```bash
 npx -y @yarahdev/cli feedback --json \

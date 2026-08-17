@@ -243,7 +243,7 @@ Yarah exposes two write surfaces against the same `storage.objects` table:
 | Surface | Who calls it | `uploaded_by` set to |
 |---------|--------------|----------------------|
 | `/api/storage/...` REST | A signed-in end user, JWT in the request | The caller's `sub` |
-| `/storage/v1/s3/...` S3 protocol | An AWS-SDK / `aws-cli` client with an Yarah S3 access key | `NULL` |
+| `/storage/v1/s3/...` S3 protocol | An AWS-SDK / `aws-cli` client with a Yarah S3 access key | `NULL` |
 
 Under the default owner-only SELECT policy, `NULL = '<sub>'` is never true (SQL three-valued logic), so **end users cannot see S3-uploaded rows through the user API**. Admin/API-key callers bypass RLS and see everything. The S3 surface itself doesn't run RLS — it uses admin credentials by design.
 
